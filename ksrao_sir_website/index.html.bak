@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Script Tutorials">
+    <meta name="description" content="Responsive Websites Using BootStrap - demo page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prof. K. Sreenivasa Rao | Professor | CSE | IIT Kharagpur </title>
+    <!-- css stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- modal box -->
+    <div class="modal fade" id="my-modal-box" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"
+              aria-hidden="true">×</button>
+            <div class="modal-title" id="my-modal-box-l">
+              <h3>Share it</h3>
+            </div>
+          </div>
+          <!-- /.modal-header -->
+          <div class="modal-body">
+            <p>Share it box content</p>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+              <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a>
+              <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a>
+              <a class="addthis_button_compact"></a> <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dbfb1915f17d240"></script>
+          </div>
+          <!-- /.modal-body --> </div>
+        <!-- /.modal-content --> </div>
+      <!-- /.modal-dialog --> </div>
+    <!-- /.modal -->
+    <!-- fixed navigation bar -->
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target="#b-menu-1"> <span class="sr-only">Toggle
+              navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Prof.
+            K.Sreenivasa Rao</a> </div>
+        <div class="collapse navbar-collapse" id="b-menu-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="bio.html">Biography</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="cou.html">Courses</a></li>
+            <li><a href="pub.html">Publications</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="#">Students</a></li>
+          </ul>
+        </div>
+        <!-- /.nav-collapse --> </div>
+      <!-- /.container --> </div>
+    <!-- /.navbar -->
+    <!-- slider -->
+    <div id="slider" class="carousel slide" data-ride="carousel">
+      <!-- controls -->
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"><br>
+        </li>
+        <li data-target="#slider" data-slide-to="1"><br>
+        </li>
+        <li data-target="#slider" data-slide-to="2"><br>
+        </li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- slides -->
+        <div class="item active"> <img src="images/sir1.jpeg" style="height:120%;width:100%;">
+          <div class="carousel-caption"> </div>
+        </div>
+        <div class="item"> <img class="d-block" src="images/iitkgp.jpeg" style="height:120%;width:100%;" alt="IIT Kharagpur">
+          <div class="carousel-caption">
+            <h1>IIT Kharagpur</h1>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Sample Title</h1>
+              <p>Text goes here </p>
+              <p><a class="btn btn-lg btn-warning" href="#" role="button">Button
+                  3</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- left-right controls --> <a class="left carousel-control" href="#slider"
+        data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!-- /.carousel -->
+    <!-- main container -->
+    <div class="container">
+      <!-- 2-column layout -->
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <!-- box 4 -->
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Welcome to my website </h3>
+            </div>
+            <div class="panel-body" style="text-align: justify">
+              <p>Presently I am Professor at the Computer Science &amp;
+                Engineering Department, IIT Kharagpur.</p>
+              <p>For the last 16 years I have been working on signal processing
+                and machine learning aspects, targeted to mainly speech
+                applications. In collaboration with Govt. of India (DIT, MCIT,
+                DST) and other premium technological institutes of India, we
+                have developed various speech systems in Indian languages.
+                During the initial period of my career my focus was on
+                acquisition and incorporation of prosody for developing various
+                speech systems. Later my focus has been shifted to (i)
+                expressive speech analysis/synthesis, (ii) development of robust
+                speech systems, (iii) vocal folds activity analysis and syntheis
+                in view of speecha nd biomedical applications, (iv) development
+                of appropriate signal processing methods to extract the
+                characteristic features from Hindustani music and (v) big-data
+                analysis framework and audio and multimedia analytics. </p>
+              <p>My current focus is on (i) development of robust speech
+                interfaces in the context of Indian languages targeted to the
+                objectives such as E-Governance, Digital India and Smart phones,
+                (ii) Exploring signal processing and machine learning paradigms
+                for automatic processing of Hindustani music and (iii) Exploring
+                big-data analytics for speech, music, audio and video document
+                representation, indexing and retrieval tasks. </p>
+            </div>
+          </div>
+        </div>
+        <!--/span-->
+        <!-- column 3 (sidebar) -->
+        <div class="col-sm-3 sidebar-offcanvas" id="sidebar">
+          <!-- box 6 -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Latest Announcements</h3>
+            </div>
+            <div class="panel-body">
+              <p><a href="cou-caos-1.html">CAOS course web page for Spring
+                  Semester, 2018 launched</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- /column 3 (sidebar) --> </div>
+      <!--/row-->
+      <footer>
+        <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+          <p class="navbar-text">© Copyright 2018 Prof. K. Sreenivasa Rao</p>
+        </nav>
+      </footer>
+    </div>
+    <!--/.container-->
+    <!-- add javascripts -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

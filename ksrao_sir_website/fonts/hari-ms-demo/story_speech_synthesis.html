@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://shilloi.iitg.ernet.in/~prs/ec332.shtml -->
+<HTML><HEAD><TITLE> Harikrishna D M </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Language content=en-us>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY text=#000000 aLink=#ff0000 bgColor=#ffffff
+background=vopdurmodfiles/back_wrk.jpg topMargin=5>
+<LEFTMARGIN=" <HR color="#000C66" noshade size="10" width="98%">
+<CENTER>
+<H1><B><FONT color=#000fff> 
+</FONT></B></H1><FONT face="Arial,Verdana,Times New Roman,Tahoma"
+color=#000fff> Harikrishna D M <BR> MS Student <BR> Department of Computer Science and Engineering <BR> Indian 
+Institute Of Technology Kharagpur, West Bengal, INDIA <BR> Phone: +91-9743414545 <BR> Email: harikrishna.dm@sit.iitkgp.ernet.in <BR> </FONT></CENTER>
+<HR width="98%" color=#00c660 noShade SIZE=10>
+</HR><BR>
+
+<center>
+<h1>MULTI-STAGE CHILDREN STORY SPEECH SYNTHESIS</h1>
+</center>
+
+
+<ul>
+<LI><b>Introduction:</b> The basic objective of this work is to synthesize story-style speech from a story text using the neutral text-to-speech systems. This work aims at developing a multi-stage children story speech synthesizer which synthesizes high-quality story-style speech from story text. In this work, the overall framework of multi-stage children story speech synthesis is divided into three stages: <b>(i) story genre classification from story text</b>, <b>(ii) emotion prediction from story text</b>, and <b>(iii) synthesis of story-style speech from story text</b>. This work makes significant contributions to the study of <i>story classification, emotion prediction</i> and <i>expressive speech synthesis</i>.
+</LI>
+</ul>
+
+<ul>
+<LI><b>Block diagram of the proposed framework for story-style speech synthesis</b>
+</LI>
+</ul>
+
+
+<center>
+<img src="Story_Emotion_Synthesis.jpeg" alt="Block diagram of story-style speech synthesis" style="width:1000px;height:400px;">
+</center>
+
+<p>
+<ul>
+Firstly, the story genre and emotions from the given story text are identified, then story-specific prosody modification factors are manually derived by listening to a small set of stories, and finally story-style speech is synthesized by incorporating the derived story-specific prosody modification factors using a markup language. The story text is classified into one of the predefined story genres: <b>fable, folk-tale</b> and <b>legend</b>. The individual sentences of the stories are classified into one of the predefined emotion classes: <b>happy, sad, anger, fear</b> and <b>neutral</b>. The story-specific prosody modification factors are derived by analyzing the prosody parameters of story-specific emotions. The prosody parameters includes <b>pitch base, pitch range, intensity</b> and <b>speaking rate</b>. <b>SABLE</b> markup is used for synthesizing the story-style speech from story text using Festival TTS system. The story-style speech is synthesized by annotating the input story text with SABLE prosody tags. The SABLE prosody tags guide the <b>Festival TTS system</b> to select the optimal units based on the prosody modification factors provided in the prosody tags. The selected optimal units are concatenated to produce the story-style speech. 
+</ul>
+</p>
+
+
+<ul>
+<LI><b>Different stages in our proposed framework for multi-stage children story speech synthesis</b> 
+<ol>
+<p>
+<li><b>Children story classification:</b> Hindi and Telugu children stories consisting of 300 and 150 short stories are classified into three genres: <i>fable, folk-tale</i> and <i>legend</i> using keyword and part-of-speech (POS) features. Various feature reduction techniques are explored to enhance the performance of story classification. Unlike traditional document classification methods which use the whole document for classification, we have explored story classification by diving stories into partial parts such as (i) <i>introduction, main, climax</i> and (ii) <i>initial, middle, end</i>. Further, we tried to find an optimal number of sentences required to identify the story genre using sentence incremental model. Three promising machine learning classifiers for text classification: <i>naive Bayes, k-nearest neighbour</i> and <i>support vector machine</i> are used. Statistical significance test is performed to evaluate the cross-classifier performance and the performance of the classifiers is evaluated using precision, recall and F-measure.
+</li>
+</p>
+
+<p>
+<li><b>Emotion prediction from story text:</b> The next stage in our proposed multi-stage children story speech synthesis framework is prediction of sentence level emotions from the story text. Due to unavailability of the labelled emotional sentences in Telugu, we are restricting the emotion prediction task for Hindi. A two-stage approach for predicting emotions from story text has been proposed. In the first stage, sentence level emotions are predicted using POS and proposed emotion-specific features. In the second stage, the predicted emotions are updated using the knowledge of the sequence of emotions present in the story text. The importance of the distribution of emotions in children stories and the statistical evidence for the need for emotional sequencing are discussed.
+</li>
+</p>
+
+<p>
+<li><b>Synthesis of story-style speech:</b> A small set of story corpus is perceptually analyzed to derive story-specific prosody modification factors. To derive the story-specific prosody modification factors, a subset of story corpus comprising of 45 stories, recorded by a professional female artist are considered. These 45 stories are also synthesized using Hindi neutral TTS system. The story-specific prosody modification factors are derived carefully by analyzing the perceptual differences between synthesized neutral speech utterances and their respective utterances narrated by a storyteller. To synthesize story-style speech using SABLE markup language, emotional salient sentences from the story text has been identified and annotated with corresponding story-specific emotion tags. Finally, the annotated story text in the form of SABLE markup template is given as input to the Festival TTS system. The SABLE markup guides the Festival TTS system to select the optimal units based on the prosody factors provided in the SABLE markup tags. The selected optimal units are concatenated to generate the story-style speech.
+</li>
+</p>
+
+</LI>
+</ul>
+
+
+<ul>
+<LI><b>Evaluation of synthesized story-style speech:</b> The quality of the story-style speech synthesized using our <i>proposed method</i> (i.e., incorporating story-specific emotions) is evaluated by comparing it with the <i>baseline method</i> (i.e., story-style speech synthesized by incorporating the basic emotions). The synthesized story-style speech is evaluated by comparing its <i>naturalness, intelligibility</i> and <i>story style</i>. In <i>baseline method</i>, the prosodic aspects of the sentence are analyzed at three levels: <i>initial, middle</i> and <i>final</i> words of the sentence. The objective and subjective evaluations are carried out to assess the quality of the synthesized speech. <i>Mel cepstral distortion</i> (MCD) is used as an objective measure to compare the story-style speech synthesized using two methods. Apart from this, listening tests are conducted to assess the quality of synthesized speech. <i>Mean opinion scores (MOS)</i> and <i>preference tests</i> are used for subjective evaluation of the synthesized story-style speech. A few Hindi speech samples synthesized using the <i>proposed</i> and <i>baseline</i> methods are provided in the below table. In the table, <i>Baseline</i> and <i>Proposed</i> corresponds to speech files synthesized using baseline and our proposed methods.
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<center>
+<p>
+<table style="width:40%">
+<caption>The synthesized speech samples according to story genres</caption>
+    <tr>
+        <td><center><b>Story Genres</b></center></td>
+        <td><center><b>Baseline</b></center></td>
+        <td><center><b>Proposed</b></center></td>
+    </tr>
+    <tr>
+        <td><center>Fable</center></td>
+        <td><a target="_blank" HREF="wav/Fable_Baseline.wav"> <center> Fable_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Fable_Proposed.wav"> <center> Fable_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Folk-tale</center></td>
+        <td><a target="_blank" HREF="wav/Folk_Baseline.wav"> <center> Folk_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Folk_Proposed.wav"> <center> Folk_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Legend</center></td>
+        <td><a target="_blank" HREF="wav/Legend_Baseline.wav"> <center> Legend_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Legend_Proposed.wav"> <center> Legend_Proposed </center> </A></td>
+    </tr>
+</table>
+</p>
+
+<p>
+<table style="width:40%">
+<caption>The synthesized speech samples according to emotion classes</caption>
+    <tr>
+        <td><center><b>Emotions</b></center></td>
+        <td><center><b>Baseline</b></center></td>
+        <td><center><b>Proposed</b></center></td>
+    </tr>
+    <tr>
+        <td><center>Anger</center></td>
+        <td><a target="_blank" HREF="wav/Anger_Baseline.wav"> <center> Anger_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Anger_Proposed.wav"> <center> Anger_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Happy</center></td>
+        <td><a target="_blank" HREF="wav/Happy_Baseline.wav"> <center> Happy_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Happy_Proposed.wav"> <center> Happy_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Sad</center></td>
+        <td><a target="_blank" HREF="wav/Sad_Baseline.wav"> <center> Sad_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Sad_Proposed.wav"> <center> Sad_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Fear</center></td>
+        <td><a target="_blank" HREF="wav/Fear_Baseline.wav"> <center> Fear_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Fear_Proposed.wav"> <center> Fear_Proposed </center> </A></td>
+    </tr>
+    <tr>
+        <td><center>Neutral</center></td>
+        <td><a target="_blank" HREF="wav/Neutral_Baseline.wav"> <center> Neutral_Baseline </center> </A></td>
+        <td><a target="_blank" HREF="wav/Neutral_Proposed.wav"> <center> Neutral_Proposed </center> </A></td>
+    </tr>
+</table>
+</p>
+
+
+</center>
+</LI>
+</ul>
+
+
+
+
+
+<ul>
+<LI> <b>Publications</b>
+<ol>
+
+<p>
+<li> Harikrishna D M and K. Sreenivasa Rao, "<em>Emotion-specific features for classifying emotions in story text</em>", in <i>Twenty Second National Conference on Communications (NCC)</i>, (Guwahati, India), March 2016. <a target="_blank" HREF="Emotion_Specific_Features_NCC_Guwahati.pdf"> PDF </A> </li>
+
+<li> Harikrishna D M and K. Sreenivasa Rao, "<em>Classification of children stories in Hindi using keywords and POS density</em>", in <i>IEEE International Conference on Computer Communication and Control (IC4)</i>, (Indore, India), September 2015. <a target="_blank" HREF="Story_Classification_Keyword_POS_IC4_Indore.pdf"> PDF </A> </li>
+
+<li> Harikrishna D M and K. Sreenivasa Rao, "<em>Children story classification based on structure of the story</em>", in <i>Fourth International Conference on Advances in Computing, Communications and Informatics (ICACCI)</i>, (Kochi, India), August 2015. <a target="_blank" HREF="Children_Story_Classification_ICACCI_Kochi.pdf"> PDF </A> </li>
+
+<li> Harikrishna D M, Gurunath Reddy M and K. Sreenivasa Rao, "<em>Multi-stage children story speech synthesis for Hindi</em>", in <i>Eighth International Conference on Contemporary Computing (IC3)</i>, (Noida, India), August 2015. <a target="_blank" HREF="Multi-stage_Children_Story_Speech_Synthesis_IC3_Noida.pdf"> PDF </A> </li>
+
+<li> Gurunath Reddy M, Harikrishna D M, K. Sreenivasa Rao, and  Manjunath K E, "<em>Telugu emotional story speech synthesis using SABLE markup language</em>", in <i>IEEE International Conference on Signal Processing and Communication Engineering Systems (SPACES)</i>, (Vijayawada, India), January 2015. <a target="_blank" HREF="Telugu_Story_Synthesis_SPACES_Vijayawada.pdf"> PDF </A> </li>
+
+<li> Parakrant Sarkar, Arijul Haque, Arup Kumar Dutta, Gurunath Reddy M, Harikrishna D M, Prasenjit Dhara, Rashmi Verma, Narendra N P, Sunil Kumar S B, Jainath Yadav and K. Sreenivasa Rao, "<em>Designing prosody rule-set for converting neutral TTS speech to storytelling style speech for Indian languages: Bengali, Hindi and Telugu</em>", in <i>Seventh International Conference on Contemporary Computing (IC3)</i>, (Noida, India), August 2014. <a target="_blank" HREF="Design_Prosody_Rules_IC3_Noida.pdf"> PDF </A> </li>
+</p>
+
+</ol>
+</LI>
+</ul>
+
+
+ </BODY></HTML>
+
+
+
+

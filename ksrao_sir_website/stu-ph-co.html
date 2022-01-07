@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <meta name="description" content="Responsive Websites Using BootStrap - demo page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prof. K. Sreenivasa Rao | Professor | CSE | IIT Kharagpur </title>
+
+    <!-- css stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- modal box -->
+    <div class="modal fade" id="my-modal-box" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title" id="my-modal-box-l">
+              <h3>Share it</h3>
+            </div>
+          </div><!-- /.modal-header -->
+          <div class="modal-body">
+            <p>Share it box content</p>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dbfb1915f17d240"></script>
+          </div><!-- /.modal-body -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- fixed navigation bar -->
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Prof. K.Sreenivasa Rao</a>
+        </div>
+        <div class="collapse navbar-collapse" id="b-menu-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="res.html">Research</a></li>
+            <li><a href="cou.html">Courses</a></li>
+            <li><a href="pub.html">Publications</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li class="active"><a href="stu.html">Students</a></li>
+            
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- /.nav-collapse -->
+      </div> <!-- /.container -->
+    </div> <!-- /.navbar -->
+
+    <!-- slider -->
+    
+    
+
+    <!-- main container -->
+    <div class="container">
+
+      <!-- second menu bar -->
+      <nav class="navbar navbar-default navbar-static">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#b-menu-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- submenu elements for #b-menu-2 -->
+        <div class="collapse navbar-collapse" id="b-menu-2">
+    
+
+        </div><!-- /.nav-collapse -->
+      </nav>
+
+      <!-- 2-column layout -->
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 ">
+
+          <!-- jumbotron -->
+          <div class="jumbotron">
+            <h1>Students completed -  PhD</h1>
+          </div>
+
+          <div class="row">
+          
+          
+          <div class="container">
+   <!-- 4 PhD students -->
+  <br>
+  <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/shashi.jpg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Shashidhar G. Koolagudi </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Emotion Recognition from Speech using Source, System, and Prosodic Features
+     <br><strong>Present Affiliation :</strong> Associate Professor, NIT Surathkal
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal1"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Shashidhar G. Koolagudi</h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  Excitation source features derived from LP residual, instants of significant excitation, and glottal pulse signal are proposed to recognize the emotions.</li>
+          <li>  Spectral features such as LPCCs and MFCCs extracted from consonant, vowel, and CV (consonant-vowel) transition regions are proposed for emotion recognition.</li>
+          <li>  Pitch synchronously extracted spectral features and formant related features are also investigated for characterizing and classifying the emotions.</li>
+          <li>  Local and global prosodic features extracted from sentence, word, and syllable levels are proposed to derive multiple evidence to strengthen the emotion classification performance.</li>
+          <li>  Fusion techniques are proposed to combine the evidence obtained from source, system and prosodic features to enhance the emotion recognition performance.</li>
+          <li>  A two-stage emotion recognition approach based on speaking rate, has been proposed for improving the recognition performance.</li>
+          <li>  Different pattern classifiers such as GMM, SVM, and AANNs are used to develop models to recognize emotions.</li>
+          <li>  The simulated emotion speech corpus in Telugu is developed to promote the research on emotion speech processing in the context of Indian languages. The database contains 12000 utterances simulated by 10 speakers (5 male and 5 female) in 8 different emotions. The proposed features and models are evaluated using the developed corpus.</li>
+          <li>  The proposed features and models are also evaluated using the natural emotions collected from Hindi movies.</li>
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+     
+     
+
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/anil.JPG" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Anil Kumar Vuppala </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Vowel onset point detection for speech processing in mobile environment
+      <br><strong>Present Affiliation :</strong> Associate Professor, IIIT Hyderabad
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal2"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Anil Kumar Vuppala</h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  Methods are proposed for the detection of VOPs in presence of speech coding and background noise conditions.</li>
+          <li>  A two-stage hybrid approach based on Hidden Markov Models (HMMs) and Support Vector Machines (SVMs) is proposed for improving the performance of Consonant-Vowel (CV) recognition system.</li>
+          <li>  Two-stage VOP detection method is proposed for spotting CV units from continuous speech.</li>
+          <li>  Combined temporal and spectral preprocessing methods are explored to improve the performance of CV recognition system under background noise.</li>
+          <li>  A method based on VOPs is proposed to improve the performance of Speaker Identification (SI) system in presence of coding.</li>
+          <li>  A method is proposed for non-uniform time scale modification using VOPs and instants of significant excitation.</li>
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/nirmalya.jpeg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Nirmalya Sen </h4>
+      <p><strong>Area of Research :</strong> Speaker Recognition
+       <br><strong>Thesis Title :</strong> Enhancement of Speaker Recognition Performance for Short Test Segments using GMM-SVM and Polynomial Classifiers  
+     <br><strong>Present Affiliation :</strong> Research Engineer (Audio Analytics), Videonetics Technology Private Limited
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal3"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal3" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Nirmalya Sen</h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  Thesis reveals that, for long test segments the GMM-SVM classifier performs better than the classical GMM-UBM classifier. However, for short test segments the performance of the GMM-SVM classifier is very poor compared to the classical GMM-UBM classifier. We have shown that, the poor performance of GMM-SVM classifier for short test segments is due to the difference between the amount of MAP adaptations of training and test GMM supervectors.</li>
+          <li>  To overcome the problem of poor performance of GMM-SVM classifier in recognition of short test segments, we have proposed the partitioning of training utterance (UP). Results revealed that, the partitioning of training utterance could improve the accuracy of GMM-SVM classifier significantly for short test segments. It was clear from the results that with proper utterance partitioning, the accuracy of GMM-SVM classifier for short test segments also was significantly better than the classical GMM-UBM classifier. For long test segments also, the overall performance of GMM-SVM classifier improved slightly due to the partitioning of training utterance.</li>
+          <li>  We have shown that, as the dimension of the GMM supervector increases (i.e., the model order of the UBM increases), the average between-class-distance decreases. Results also revealed that, as the dimension of the GMM supervector increases the more number of support vectors are required for SVM training. Hence, for GMM-SVM classifier, average number of cohorts per speaker increases when the dimension of the GMM supervector increases. We have given a clear intuitive explanation for greater overlap of various classes in the higher dimensional GMM supervector space.</li>
+          <li>  We have thoroughly investigated the necessity of utterance partitioning for speakers belonging to the impostor class in GMM-SVM classifier in recognition of short test segments. We have shown that, if we do not perform utterance partitioning for speakers of impostor class then, the average number of cohorts per speaker increases significantly and for short test segments, the performance of GMM-SVM classifier degraded drastically. It is also observed that, as the dimension of the GMM supervector increases, the necessity of partitioning of training utterances for the speakers belonging to the impostor class also increases.</li>
+          <li>  We have investigated the effects of data imbalance problem in GMM-SVM classifier with minority (positive) class over-sampling approach. We have shown that, performance of GMM-SVM classifier has not improved even after sufficient enhancement of the number of support vectors for the positive class of the SVM classifier. Thesis discusses a clear intuitive explanation for, why the problem of data imbalance between speaker class and impostor class does not have any adverse consequence on the performance of GMM-SVM classifier.</li>
+          <li>  We have also investigated the effects of data imbalance problem in GMM-SVM classifier using majority class (i.e., negative class) under-sampling approach (NCUS) by removing the support vectors of the majority class. Thesis demonstrates that, after NCUS operation, the decision hyperplane of the SVM classifier shifts toward the ideal position; however, the orientation of the decision hyperplane is not satisfactory. Results confirm that, NCUS operation improves the performance of the GMM-SVM classifier when false alarm probability is high. However, when false alarm probability is low, the performance of the GMM-SVM classifier decreases after NCUS operation due to the alteration of cohorts (i.e., rejection of proper cohorts).</li>
+          <li>  We have also performed experiments using max rule speaker comparison with inner product discriminant functions (MRSCIPDF) technique which is the extreme case of majority class under-sampling approach. Thesis reveals that, similar to the GMM-SVM classifier, the partitioning of training utterance operation can improve the performance of MRSCIPDF technique significantly for recognition of short test segments and modestly for long test segments.</li>
+          <li>  Thesis comprehensively concludes that, the improvement in speaker verification performance after partitioning of the training utterances in GMM-SVM classifier is not due to the reduction in data imbalance problem. Reduction in the amount of mismatch of MAP adaptations between training GMM supervectors and test GMM supervectors is the reason for improvement in the performance of GMM-SVM classifier when we apply partitioning of training utterance.</li>
+          <li>  We have shown that, data imbalance problem has adverse consequence on the performance of the polynomial classifier. The speaker identification performance of the polynomial classifier trained with mean-square error (MSE) training criterion is much poorer compared to the performance of the GMM classifier.</li>
+          <li>  To overcome the problem of data imbalance in a polynomial classifier, we have proposed the weighted mean-square error (WMSE) training criterion for the polynomial classifier. The speaker identification performance of the polynomial classifier trained with weighted mean-square error (WMSE) training criterion is far better compared to the performance of the polynomial classifier trained with mean-square error (MSE) training criterion. With proper selection of weight, the speaker identification performance of the polynomial classifier trained with WMSE training criterion is better than the performance of the GMM classifier. </li>
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/narendra.jpg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Narendra N P </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Source Modeling for Improvement of Quality of HMM-based Speech Synthesis
+       <br><strong>Present Affiliation :</strong> Postdoctoral Researcher, Aalto University (Finland)
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal4"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Narendra N P</h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  A robust voicing detection and F0 estimation method is proposed based on the ZFF method.</li>
+          <li>  A parametric source modeling method is proposed based on the principal component analysis of pitch-synchronous residual frames of the excitation signal.</li>
+          <li>  Based on the analysis of characteristics of the residual frames around GCI, a parametric source modeling method is proposed which models the residual frames as a combination of deterministic and noise components.</li>
+          <li>  A hybrid source modeling method is proposed by utilizing the optimal residual frames extracted from the excitation signal of a phone.</li>
+          <li>  A hybrid source modeling method is proposed based on the time-domain deterministic plus noise model.</li>
+          <li>  Automatic detection of creaky voice method is proposed based on the variance of the epoch parameters. The epoch parameters which characterize the source of excitation are analyzed in modal and creaky regions.</li>
+          <li>  The hybrid source model is proposed for generating the creaky voice at appropriate places in the synthesized speech.</li>       
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+     
+     
+     
+    </div>
+  </div>
+  <br>
+  <hr>
+  
+   <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/jainath.jpg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Jainath Yadav </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Emotion Transformation using Significant Events of Speech
+       <br><strong>Present Affiliation :</strong> Assistant Professor, Central University of South Bihar
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModl4"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModl4" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Jainath Yadav </h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  A method based on zero time windowing is proposed for epoch detection from emotional speech.</li>
+          <li>  Methods are proposed for the detection of vowel onset and offset points from neutral and emotional speech.</li>
+          <li>  A method for detecting vowel transition regions has been proposed based on epoch locations and rate of change of first formant.</li>
+          <li>  A non-uniform emotion-specific prosody incorporation method is proposed using significant events of speech.</li>
+          <li>  Gaussian Mixture Models (GMMs) and Feedforward Neural Networks (FFNNs) based mapping functions have been developed for transforming prosodic and spectral features from neutral to desired emotions.</li>
+          <li>  Emotional speech synthesis systems have been developed by incorporating the emotion-specific knowledge derived from manual rule-base and automatic mapping functions.</li>
+          <li>  Emotion transformation framework has been explored for developing the robust Speaker Identification (SI) and Consonant-Vowel (CV) recognition systems in the emotional environments.</li>       
+          
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+     
+     
+     
+    </div>
+  </div>
+  <br>
+  <hr>
+  
+  
+  
+   <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/Pradeep-ASR.JPG" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Pradeep R </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Incorporation of Manner of Articulation Knowledge to Improve the Performance of Automatic Speech Recognition System
+       <br><strong>Present Affiliation :</strong> Applied Research Scientist, Swiggy, Bangalore, India.
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal5"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal5" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+ 
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Pradeep R </h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li>  A method based on SFM is proposed to detect the two broad MoA namely the sonorants, and the obstruents in a continuous speech. The acquired MoA knowledge is explicitly incorporated in the LSTM based acoustic models for improving the performance of the ASR system.</li>
+          <li>  The acquired 2-class MoA knowledge is incorporated in the decoding graph for improving the performance of the conventional ASR system.</li>
+          <li>  The acquired 2-class MoA knowledge is incorporated to re-score the graph cost of the conventional word lattice for improving the performance of the conventional ASR system.</li>
+          <li>  A method based on CTC based end-to-end system is explored to detect the finer levels of MoA such as vowels, semi-vowels, nasals, fricatives and stop consonants.</li>
+          <li>  The acquired 5-class MoA knowledge is incorporated in modifying the decoder of the end-to-end ASR system.</li>
+          <li>  The knowledge of manner CTC pre-trained weights is used in re-training the end-to-end ASR system.</li>
+               
+          
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+     
+     
+     
+    </div>
+  </div>
+  <br>
+  <hr>
+  
+    <div class="media" >
+    <div class="media-left media-top">
+      <img src="images/kiran.jpg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Kiran Reddy M </h4>
+      <p><strong>Area of Research :</strong> Speech Processing
+       <br><strong>Thesis Title :</strong> Source Modeling and Cross-Lingual Voice Conversion for High-quality Polyglot Parametric Speech Synthesis
+       <br><strong>Present Affiliation :</strong> Post-Doctoral Fellow, Aalto University, Finland.
+     </p>
+     <div class="container">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal6"><b>Thesis Contribution</b></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal6" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thesis contribution of Kiran Reddy M </h4>
+        </div>
+        <div class="modal-body">
+         
+          <ol>
+          <li> A robust pitch extraction method is proposed for improving the quality of speech synthesized from statistical parametric speech synthesis.</li>
+          <li>  A source modeling method is proposed based on epoch parameters and phone-specific natural residual segments.</li>
+          <li>  A method based on deep auto-encoder bottleneck features has been proposed for cross-lingual voice conversion.</li>
+          <li>  A customizable DNN-based polyglot TTS system is developed for Indian languages by integrating the CLVC technique into multilingual TTS framework.</li>
+               
+        </ol>
+
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> <!--End Footer-->
+        </div><!-- End Modal content-->
+        
+      </div>
+      </div>
+      
+    </div>
+     
+     
+     
+    </div>
+  </div>
+  <br>
+  <hr>
+  <!--
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="images/avatar_mr.png" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="media">
+    <div class="media-left media-bottom">
+      <img src="images/avatar_mr.png" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Bottom</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  
+  !-->
+  
+  
+  
+</div>
+
+
+
+          
+
+           
+
+          </div><!--/row-->
+        </div><!--/span-->
+
+       
+
+      </div><!--/row-->
+
+     <footer>
+        <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+        <p class="navbar-text">&copy Copyright 2019 Prof. K. Sreenivasa Rao</p>
+        </nav>
+      </footer>
+        
+    </div><!--/.container-->
+
+    <!-- add javascripts -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
